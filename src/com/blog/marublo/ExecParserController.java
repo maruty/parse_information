@@ -129,7 +129,7 @@ public class ExecParserController {
 	    String subject = "IPO株についてのイベントが本日発生しています！";
 	    String content = "";
 	    content = content + "IPO株イベント情報 \n\n本日下記のイベントが発生してます\n";
-	    content = content + "=========================";
+	    content = content + "=========================\n\n";
 	    for(IpoDto dto:ipoDtopMailList){
 	    	content = content + dto.meigaraCode + ":" + dto.meigaraName + "\n";
 	    	content = content + "BB期間" + dto.BBDate  + "\n";
