@@ -95,7 +95,7 @@ public class ExecParserController {
 				ipoDtopMailList.add(dto);
 			}
 		}
-
+		driver.close();
 		//メール
 
 		sendMail(ipoDtopMailList);
