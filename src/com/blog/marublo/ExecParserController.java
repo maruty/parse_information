@@ -132,7 +132,7 @@ public class ExecParserController {
 	    content = content + "=========================\n\n";
 	    for(IpoDto dto:ipoDtopMailList){
 	    	content = content + dto.meigaraCode + ":" + dto.meigaraName + "\n";
-	    	content = content + "BB期間" + dto.BBDate  + "\n";
+	    	content = content + "BB期間" + dto.BBDate.replace("\n", "〜")  + "\n";
 	    	content = content + "上場日" + dto.openDate +  "\n";
 	    	content = content +  "\n\n";
 	    }
